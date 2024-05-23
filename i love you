@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site para Minha Namorada</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5f5;
+            color: #4a148c;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4a148c;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        section {
+            padding: 2em;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        .form-container {
+            background-color: #e1bee7;
+            padding: 1em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container input, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #4a148c;
+            border-radius: 5px;
+        }
+        .form-container button {
+            background-color: #4a148c;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .form-container button:hover {
+            background-color: #d81b60;
+        }
+        footer {
+            background-color: #4a148c;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        audio {
+            display: block;
+            margin: 2em auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Para Minha Namorada</h1>
+    </header>
+
+    <section>
+        <h2>Sobre Ela</h2>
+        <p>Minha namorada é a pessoa mais especial do mundo. Ela é carinhosa, divertida e sempre me faz sorrir. Adoro passar cada momento ao lado dela e criar memórias inesquecíveis juntos.</p>
+    </section>
+
+    <section>
+        <h2>Nossas Memórias</h2>
+        <div class="gallery">
+            <img src="foto1.jpg" alt="Foto 1">
+            <img src="foto2.jpg" alt="Foto 2">
+            <img src="foto3.jpg" alt="Foto 3">
+            <!-- Adicione mais fotos conforme necessário -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Cartas de Amor</h2>
+        <div class="form-container">
+            <form action="https://example.com/submit" method="POST">
+                <label for="name">Seu Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <section>
+        <h2>Músicas</h2>
+        <audio controls>
+            <source src="musica.mp3" type="audio/mpeg">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+    </section>
+
+    <footer>
+        <p>Feito com amor por [Seu Nome]</p>
+    </footer>
+</body>
+</html>
